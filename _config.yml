@@ -1,0 +1,39 @@
+# Site settings
+title:          卧龙岗散人
+description:    一个正在学习制作个人博客的傻子。
+url:            https://JackyZ137.github.io
+# Author
+author:
+  name:         JackyZ
+  email:        zzljackson940713@gmail.com
+  url:          https://JackyZ137.github.io
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+# Related posts settings
+related_posts_section:
+  max_count:        5
+  min_common_tags:  2
+
+# Links to social media
+social:
+  email: zzljackson940713@gmail.com
+  github: https://github.com/JackyZ137
+  twitter: https://twitter.com
+  linkedin: https://linkedin.com/
