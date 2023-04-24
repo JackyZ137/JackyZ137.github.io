@@ -171,13 +171,13 @@ $$
 \end{align}
 $$
 当t取足够大时，最后一个不等式成立（例如，$t = n(\log n)^2$)。
-由于$c$是线性规划问题的解，因此根据$c$获得的向量$\bar{c}$是不会被任何我们算法中选取的$q_1, \dots,q_t \subseteq [n]$disqualify的。因此，若这些$q_1, \dots, q_t$disqualify了$X$中所有的x，那么也就说明$\bar{c} \notin X$，因此$dist(c^{\prime} , d) \leq \epsilon n$。
+由于$c$是线性规划问题的解，因此根据$c$获得的向量$\bar{c}$是不会被任何我们算法中选取的$q_1, \dots,q_t \subseteq [n]$disqualify的。因此，若这些$q_1, \dots, q_t$ disqualify了$X$中所有的x，那么也就说明$\bar{c} \notin X$，因此$dist(c^{\prime} , d) \leq \epsilon n$。
 
 ## Tightness of The Results
 
 在这一部分中，主要说明上述针对多项式级攻击者的扰动界限是否足够紧。在这一章中，主要通过构造了一个$\tilde{O}(\sqrt{n})$扰动内的数据库算法，证明在最强的多项式攻击者的假设下，该算法仍然是Private的（也就是说，数据库不会泄露任何记录相关的信息），从而说明了Theorem3中提供的界限是足够紧的。
 
-我们假设数据库是服从均匀分布的n个bits。设数据库$d\in_R \{0,1\}^n$。设扰动的规模上限$\mathcal{E} = \sqrt{n} \cdot (\log n)^{1+\epsilon} = \tilde{O}(\sqrt{n})$。考虑数据库(及其算法)$\mathcal{D} = (d,\mathcal{A})$，其中算法$\mathcal{A}$如下：
+我们假设数据库是服从均匀分布的n个bits。设数据库$d\in_R \\{ 0,1 \\}^n$。设扰动的规模上限$\mathcal{E} = \sqrt{n} \cdot (\log n)^{1+\epsilon} = \tilde{O}(\sqrt{n})$。考虑数据库(及其算法)$\mathcal{D} = (d,\mathcal{A})$，其中算法$\mathcal{A}$如下：
 
 > 1.每输入一个查询$q\subseteq [n]$，算法$\mathcal{A}$计算$a_q = \sum_{i \in q} d_i.$
 > 
